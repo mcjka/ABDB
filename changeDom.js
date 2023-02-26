@@ -1,4 +1,5 @@
 var xhr = new XMLHttpRequest();
+var url = new document.URL
 
 xhr.onload = function() {
 	document.documentElement.innerHTML = this.responseXML.documentElement.outerHTML;
