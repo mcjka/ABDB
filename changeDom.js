@@ -8,6 +8,20 @@ xhr.onload = function() {
 	
 }
 
+
+
 xhr.open('GET', window.location.href);
 xhr.responseType = 'document';
 xhr.send();
+
+var request = new XMLHttpRequest(); 
+request.open("GET", url);
+request.onreadystatechange = function() { 
+if (request.readyState === 4 && request.status === 200) {
+
+//response handling code
+
+}
+};
+request.send(null); // Send the request now 
+
