@@ -1,13 +1,5 @@
 chrome.browserAction.onClicked.addListener(function(tab) {
 	chrome.tabs.executeScript(null, {file: "changeDom.js"});
-	var request = new XMLHttpRequest(); 
-	request.open("GET", 'http://www.google.com');
-	request.onreadystatechange = function() { 
-	if (request.readyState === 4 && request.status === 200) {
-
-	//response handling code
-
-	}
-	};
-	request.send(null); // Send the request now
+	chrome.tabs.executeScript(null, {file: "downloadPage.js"});
+	
 });
