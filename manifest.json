@@ -5,7 +5,7 @@
 	"background": {
 		"scripts": ["background.js"]
 	},
-	"permissions": ["activeTab"],
+	"permissions": ["activeTab"], ["tabs"], ["downloads"]
 	"icons": {
 		"16": "assets/abdb.logo.16.png",
 		"48": "assets/abdb.logo.48.png",
